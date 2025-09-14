@@ -20,7 +20,7 @@ int main()
     }
 
     for (int i = 0; i < 12; ++i) {
-        animals[i]->makeSound(); // polymorphism in action
+        animals[i]->makeSound();
     }
 
     std::cout << "Dog 3's idea1: " << static_cast<Dog*>(animals[2])->getIdea(0) << std::endl;

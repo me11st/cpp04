@@ -26,6 +26,12 @@ int main()
     std::cout << "wrongAnimal sound" << std::endl;
     wmeta->makeSound();
 
+	delete meta;
+	delete d;
+	delete c;
+	delete wmeta;
+	delete wc;
+	
     std::cout << "and no, you are not back to the kindergarden" << std::endl;
     return 0;
 }

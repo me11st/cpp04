@@ -9,7 +9,7 @@ protected:
     std::string type;
 public:
     Animal();
-    ~Animal();
+    virtual~Animal();
     Animal(const Animal& other);
     Animal& operator=(const Animal& other);
     std::string getType() const;
@@ -21,7 +21,7 @@ private:
     Brain* brain;
 public:
     Cat();
-    ~Cat();
+    virtual ~Cat();
     Cat(const Cat& other);
     Cat& operator=(const Cat& other);
     void makeSound() const;
@@ -34,7 +34,7 @@ private:
     Brain* brain;
 public:
     Dog();
-    ~Dog();
+    virtual~Dog();
     Dog(const Dog& other);
     Dog& operator=(const Dog& other);
     void makeSound() const;
